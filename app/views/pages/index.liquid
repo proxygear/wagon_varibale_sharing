@@ -1,0 +1,16 @@
+---
+title: Home page
+published: true
+---
+{% extends 'layouts/default' %}
+
+{% block pre_load %}
+{% assign my_value = 'world' %}
+{% endblock %}
+
+
+{% block 'main' %}
+
+<p>Try to catch back the value '{{ my_value }}'</p>
+
+{% endblock %}
